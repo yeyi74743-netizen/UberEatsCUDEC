@@ -24,3 +24,26 @@ function agregarALista(platillo, id) {
 }
 M.AutoInit();
 
+const formulario = document.getElementById("form-pedido");
+
+formulario.addEventListener("submit", function(e) {
+    e.preventDefault();
+
+    const platillo = document.getElementById("platillo").value;
+    const direccion = document.getElementById("direccion").value;
+    const idPlatillo = document.getElementById("listaPlatillos").value;
+
+    db.collection("pedidos").add({
+        platillo: platillo,
+        direccion: direccion,
+        idPlatillo: idPlatillo
+    })
+    .then(() => {
+        alert("Pedido guardado correctamente");
+        formulario.reset();
+    })
+    .catch((error) => {
+        console.log(error);
+        alert("Error al guardar");
+    });
+});
