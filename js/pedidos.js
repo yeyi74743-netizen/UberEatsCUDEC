@@ -24,6 +24,8 @@ function agregarALista(platillo, id) {
 }
 M.AutoInit();
 
+
+
 const formulario = document.getElementById("form-pedido");
 
 formulario.addEventListener("submit", function(e) {
@@ -47,3 +49,19 @@ formulario.addEventListener("submit", function(e) {
         alert("Error al guardar");
     });
 });
+
+document.getElementById("btnUbicacion").addEventListener("click", function(){
+    if (navigator.geolocation) {
+        navigator.geolocation.getCurrentPosition(exito,error); 
+    }
+});
+
+function exito(posicion){
+    let latitud = posicion.coords.latitude;
+    let longitud = posicion.coords.longitude;
+    fetch(`https://nominatim.openstreetmap.org/reverse?lat=${latitud}&format=json`,{
+        
+    }
+
+    )
+}
