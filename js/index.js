@@ -36,3 +36,15 @@ function actualizarPlatillo(platillo,id) {
   tarjeta.querySelector(".recipe-ingredients").innerHTML = platillo.ingredientes;
   tarjeta.querySelector(".recipe-price").innerHTML = platillo.precio;
 }
+
+document.querySelector(".recipes").addEventListener("click", (e)=>{
+
+    if(e.target.classList.contains("material-icons")){
+
+        const id = e.target.dataset.id;
+
+        eliminarPlatillo(id);
+
+    }
+
+});
