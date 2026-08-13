@@ -1,88 +1,398 @@
-<html lang="en">
+<!DOCTYPE html>
+<html lang="es">
+
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+  <meta name="viewport"
+        content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+
+  <meta http-equiv="X-UA-Compatible"
+        content="ie=edge">
+
   <title>YEYIFOOD</title>
-  <!-- materialize icons, css & js -->
-  <link type="text/css" href="/css/materialize.min.css" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-  <link type="text/css" href="/css/styles.css" rel="stylesheet">
-  <script type="text/javascript" src="/js/materialize.min.js"></script>
+
+  <!-- MATERIALIZE -->
+  <link type="text/css"
+        href="./css/materialize.min.css"
+        rel="stylesheet">
+
+  <!-- ICONOS -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+        rel="stylesheet">
+
+  <!-- ESTILOS -->
+  <link type="text/css"
+        href="./css/styles.css"
+        rel="stylesheet">
+
+  <!-- MANIFEST -->
+  <link rel="manifest"
+        href="./manifest.json">
+
+  <!-- PWA -->
+  <meta name="mobile-web-app-capable"
+        content="yes">
+
+  <meta name="apple-mobile-web-app-capable"
+        content="yes">
+
+  <meta name="application-name"
+        content="Yeyifood">
+
+  <meta name="apple-mobile-web-app-title"
+        content="Yeyifood">
+
+  <meta name="theme-color"
+        content="#ca0707">
+
+  <meta name="msapplication-navbutton-color"
+        content="#ca0707">
+
+  <meta name="apple-mobile-web-app-status-bar-style"
+        content="black-translucent">
+
+  <!-- ICONOS PWA -->
+
+  <link rel="icon"
+        type="image/png"
+        sizes="16x16"
+        href="./img/icons/icon-16x16.png">
+
+  <link rel="icon"
+        type="image/png"
+        sizes="32x32"
+        href="./img/icons/icon-32x32.png">
+
+  <link rel="icon"
+        type="image/png"
+        sizes="48x48"
+        href="./img/icons/icon-48x48.png">
+
+  <link rel="icon"
+        type="image/png"
+        sizes="64x64"
+        href="./img/icons/icon-64x64.png">
+
+  <link rel="icon"
+        type="image/png"
+        sizes="96x96"
+        href="./img/icons/icon-96x96.png">
+
+  <link rel="icon"
+        type="image/png"
+        sizes="128x128"
+        href="./img/icons/icon-128x128.png">
+
+  <link rel="icon"
+        type="image/png"
+        sizes="144x144"
+        href="./img/icons/icon-144x144.png">
+
+  <link rel="icon"
+        type="image/png"
+        sizes="152x152"
+        href="./img/icons/icon-152x152.png">
+
+  <link rel="apple-touch-icon"
+        sizes="180x180"
+        href="./img/icons/icon-180x180.png">
+
+  <link rel="icon"
+        type="image/png"
+        sizes="192x192"
+        href="./img/icons/icon-192x192.png">
+
+  <link rel="icon"
+        type="image/png"
+        sizes="384x384"
+        href="./img/icons/icon-384x384.png">
+
+  <link rel="icon"
+        type="image/png"
+        sizes="512x512"
+        href="./img/icons/icon-512x512.png">
+
 </head>
+
 <body class="grey lighten-4">
 
-  <!-- Menu superior -->
+  <!-- MENU SUPERIOR -->
   <nav class="z-depth-0">
+
     <div class="nav-wrapper container">
-      <a href="/">YEYIFOOD</span></a>
+
+      <a href="./">
+        YEYIFOOD
+      </a>
+
       <span class="right grey-text text-darken-1">
-        <i class="material-icons sidenav-trigger" data-target="side-menu">menu</i>
+
+        <i class="material-icons sidenav-trigger"
+           data-target="side-menu">
+          menu
+        </i>
+
       </span>
+
     </div>
+
   </nav>
 
-  <!-- Menu lateral -->
-  <ul id="side-menu" class="sidenav side-menu">
-    <li><a class="subheader">YEYIFOOD</a></li>
-    <li><a href="/" class="waves-effect">Inicio</a></li>
-    <li><a href="/pages/pedidos.html" class="waves-effect">pedidos</a></li>
-    <li><a href="/pages/about.html" class="waves-effect">Acerca</a></li>
-    <li><div class="divider"></div></li>
-    <li><a href="/pages/contact.html" class="waves-effect">
-      <i class="material-icons">mail_outline</i>Contacto</a>
+
+  <!-- MENU LATERAL -->
+  <ul id="side-menu"
+      class="sidenav side-menu">
+
+    <li>
+      <a class="subheader">
+        YEYIFOOD
+      </a>
     </li>
+
+    <li>
+      <a href="./"
+         class="waves-effect">
+        Inicio
+      </a>
+    </li>
+
+    <li>
+      <a href="./pages/pedidos.html"
+         class="waves-effect">
+        Pedidos
+      </a>
+    </li>
+
+    <li>
+      <a href="./pages/about.html"
+         class="waves-effect">
+        Acerca
+      </a>
+    </li>
+
+    <li>
+      <div class="divider"></div>
+    </li>
+
+    <li>
+
+      <a href="./pages/contact.html"
+         class="waves-effect">
+
+        <i class="material-icons">
+          mail_outline
+        </i>
+
+        Contacto
+
+      </a>
+
+    </li>
+
   </ul>
 
-  <!-- Lista de platillos -->
+
+  <!-- LISTA DE PLATILLOS -->
   <div class="recipes container grey-text text-darken-1">
-    
+
   </div>
 
+
+  <!-- BOTÓN AGREGAR -->
   <div class="center">
-    <a class="btn-floating btn-small btn-large add-btn sidenav-trigger" data-target="side-form">
-      <i class="material-icons">add</i>
+
+    <a class="btn-floating btn-large add-btn sidenav-trigger"
+       data-target="side-form">
+
+      <i class="material-icons">
+        add
+      </i>
+
     </a>
+
   </div>
 
-  <!-- Agregar platillo -->
-  <div id="side-form" class="sidenav side-form">
+
+  <!-- FORMULARIO AGREGAR PLATILLO -->
+  <div id="side-form"
+       class="sidenav side-form">
+
     <form class="add-recipe container section">
-      <h6 >Nuevo platillo</h6>
-      <div class="divider"></div>
-      <div class="input-field">
-        <input placeholder="ejemplo: Pizza" id="title" type="text" class="validate">
-        <label for="title">Nombre</label>
-      </div>
-      <div class="input-field">
-        <input placeholder="e.g. Tofu, mushroom, garlic" id="ingredients" type="text" class="validate">
-        <label for="ingredients">Ingredientes</label>
-      </div>
-      <div class="input-field">
-        <input placeholder="e.j. $" id="price" type="text" class="validate">
-        <label for="price">precio</label>
-      </div>
-      <div class="input-field center">
-        <button class="btn-small">Agregar</button>
-      </div>
-    </form>
-    <button id="btnFoto">Imagen</button>
-    <div id="camara">
-              <video id="video">No hay video disponible</video>
-    </div>
-      <canvas id="canvas"></canvas>
-       <div id="salida">
-        <img id="foto" src="" alt="Foto del platillo">
-      </div>
-    </div>
-  </div>
-<script src="https://www.gstatic.com/firebasejs/6.0.1/firebase-app.js">
 
-</script>
-<script src="https://www.gstatic.com/firebasejs/6.0.1/firebase-firestore.js">
-</script>
-  <script src="/js/firebase.js"></script>
-  <script src="/js/index.js"></script>
-  <script src="/js/db.js"></script>
+      <h6>
+        Nuevo platillo
+      </h6>
+
+      <div class="divider"></div>
+
+      <div class="input-field">
+
+        <input placeholder="Ejemplo: Pizza"
+               id="title"
+               name="title"
+               type="text"
+               class="validate"
+               required>
+
+        <label for="title">
+          Nombre
+        </label>
+
+      </div>
+
+      <div class="input-field">
+
+        <input placeholder="Ejemplo: Queso, tomate, pepperoni"
+               id="ingredients"
+               name="ingredients"
+               type="text"
+               class="validate"
+               required>
+
+        <label for="ingredients">
+          Ingredientes
+        </label>
+
+      </div>
+
+      <div class="input-field">
+
+        <input placeholder="Ejemplo: 150"
+               id="price"
+               name="price"
+               type="number"
+               min="0"
+               step="0.01"
+               class="validate"
+               required>
+
+        <label for="price">
+          Precio
+        </label>
+
+      </div>
+
+      <div class="input-field center">
+
+        <button type="submit"
+                class="btn-small">
+
+          Agregar
+
+        </button>
+
+      </div>
+
+    </form>
+
+
+    <!-- CAMARA -->
+
+    <div class="center camera-controls">
+
+      <button id="btnFoto"
+              type="button"
+              class="btn-small">
+
+        <i class="material-icons left">
+          photo_camera
+        </i>
+
+        Imagen
+
+      </button>
+
+      <button id="tomarFoto"
+              type="button"
+              class="btn-small">
+
+        Capturar
+
+      </button>
+
+    </div>
+
+
+    <div id="camara"
+         class="center">
+
+      <video id="video"
+             autoplay
+             playsinline>
+
+        No hay video disponible
+
+      </video>
+
+    </div>
+
+
+    <canvas id="canvas"></canvas>
+
+
+    <div id="salida"
+         class="center">
+
+      <img id="foto"
+           src=""
+           alt="Foto del platillo">
+
+    </div>
+
+  </div>
+
+
+  <!-- FIREBASE -->
+  <script src="https://www.gstatic.com/firebasejs/6.0.1/firebase-app.js"></script>
+
+  <script src="https://www.gstatic.com/firebasejs/6.0.1/firebase-firestore.js"></script>
+
+
+  <!-- MATERIALIZE -->
+  <script src="./js/materialize.min.js"></script>
+
+
+  <!-- JS PROYECTO -->
+  <script src="./js/firebase.js"></script>
+
+  <script src="./js/index.js"></script>
+
+  <script src="./js/db.js"></script>
+
+
+  <!-- SERVICE WORKER -->
+  <script>
+
+    if ("serviceWorker" in navigator) {
+
+      window.addEventListener("load", function () {
+
+        navigator.serviceWorker
+          .register("./sw.js")
+          .then(function (registro) {
+
+            console.log(
+              "Service Worker registrado:",
+              registro.scope
+            );
+
+          })
+          .catch(function (error) {
+
+            console.error(
+              "Error al registrar Service Worker:",
+              error
+            );
+
+          });
+
+      });
+
+    }
+
+  </script>
+
 </body>
+
 </html>
